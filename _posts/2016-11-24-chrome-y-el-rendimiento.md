@@ -63,6 +63,8 @@ Opción 2:
 
 Unos milisegundos no pueden parecer mucho, pero hablamos de multiplicar por más de 5 el tiempo necesario para hacer lo mismo.
 
+[Ejemplo](https://github.com/DavidColladoGitHub/blogExamples/tree/master/Rendimiento%20Chrome) en GitHub
+
 
 ## Referencias:
 [Evite los diseños grandes y complejos, y la hiperpaginación de diseños](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing?hl=es-419)
