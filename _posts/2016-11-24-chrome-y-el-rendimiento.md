@@ -27,8 +27,8 @@ Opción 1:
 var caja = document.getElementById("caja")
 
 /*Le añadimos una clase que le da más tamaño*/
-var incrementoDeTamanio = 20;
-caja.style.width += incrementoDeTamanio;
+var incrementoDeTamanio = 50;
+caja.style.width = caja.offsetWidth + incrementoDeTamanio;
 
 /*Mostramos en consola el nuevo tamaño*/
 console.log(caja.offsetWidth)
@@ -40,26 +40,27 @@ Opción 2:
 var caja = document.getElementById("caja")
 
 /*Almacenamos el tamaño inicial en una variable*/
-var tamanioInicial = caja.style.width;
-var incrementoDeTamanio = 20;
+var tamanioInicial = caja.offsetWidth;
+var incrementoDeTamanio = 50;
+var tamanioFinal = tamanioInicial + incrementoDeTamanio
 
 /*Le añadimos una clase que le da más tamaño*/
-caja.style.width += incrementoDeTamanio;
+caja.style.width = tamanioFinal;
 
 /*Mostramos en consola el nuevo tamaño*/
-console.log(tamanioInicial + incrementoDeTamanio)
+console.log(tamanioFinal)
 {% endhighlight %}
 
 A primera vista la primera forma puede parecer más óptima. Al menos desde el punto de vista del número de líneas. Ahora vamos a ver el tiempo que han tardado:
 
 Opción 1:
-![Rendimiento sincrónico forzado](../img/capturaRendimientoSincronicoForzado.png)
+![Rendimiento sincrónico forzado](../img/capturaRendimientoSincronicoForzado.PNG)
 
 Opción 2:
-![Rendimiento no sincrónico](../img/capturaRendimientoNoSincronico.png)
+![Rendimiento no sincrónico](../img/capturaRendimientoNoSincronico.PNG)
 
 Unos milisegundos no pueden parecer mucho, pero hablamos de multiplicar por más de 5 el tiempo necesario para hacer lo mismo.
 
 
 ## Referencias:
-*[Evite los diseños grandes y complejos, y la hiperpaginación de diseños](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing?hl=es-419)
+[Evite los diseños grandes y complejos, y la hiperpaginación de diseños](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing?hl=es-419)
