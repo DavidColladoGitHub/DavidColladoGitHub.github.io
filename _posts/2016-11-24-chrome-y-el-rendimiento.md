@@ -54,9 +54,11 @@ console.log(tamanioFinal)
 A primera vista la primera forma puede parecer más óptima. Al menos desde el punto de vista del número de líneas. Ahora vamos a ver el tiempo que han tardado:
 
 Opción 1:
+
 ![Rendimiento sincrónico forzado](../img/capturaRendimientoSincronicoForzado.PNG)
 
 Opción 2:
+
 ![Rendimiento no sincrónico](../img/capturaRendimientoNoSincronico.PNG)
 
 Unos milisegundos no pueden parecer mucho, pero hablamos de multiplicar por más de 5 el tiempo necesario para hacer lo mismo.
