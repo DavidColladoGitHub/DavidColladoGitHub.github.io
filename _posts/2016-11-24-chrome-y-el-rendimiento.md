@@ -61,7 +61,7 @@ Opción 2:
 
 ![Rendimiento no sincrónico](../img/capturaRendimientoNoSincronico.PNG)
 
-Unos milisegundos no pueden parecer mucho, pero hablamos de multiplicar por más de 5 el tiempo necesario para hacer lo mismo.
+Unos milisegundos pueden no parecer mucho, pero hablamos de multiplicar por más de 5 el tiempo necesario para hacer lo mismo.
 
 [Ejemplo](https://github.com/DavidColladoGitHub/blogExamples/tree/master/Rendimiento%20Chrome) en GitHub
 
