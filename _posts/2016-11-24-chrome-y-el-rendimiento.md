@@ -62,4 +62,4 @@ Unos milisegundos no pueden parecer mucho, pero hablamos de multiplicar por más
 
 
 ## Referencias:
-https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing?hl=es-419
+*[Evite los diseños grandes y complejos, y la hiperpaginación de diseños](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing?hl=es-419)
