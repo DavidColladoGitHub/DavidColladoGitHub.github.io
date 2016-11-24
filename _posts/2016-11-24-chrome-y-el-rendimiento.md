@@ -22,7 +22,7 @@ Por supuesto podemos acceder a los valores del marco anterior sin impacto en el 
 Vamos con un ejemplo. Tenemos una página con muchos elementos. En mi ejemplo, para simplificar, todo son cajas con un color de fondo. Si quieres cambiar el tamaño de una caja y mostrar por consola el nuevo tamaño, tendrás dos opciones.
 
 Opción 1:
-```Javascript
+{% highlight javascript linenos %}
 /*Un elemento cualquiera*/
 var caja = document.getElementById("caja")
 
@@ -32,10 +32,10 @@ caja.style.width += incrementoDeTamanio;
 
 /*Mostramos en consola el nuevo tamaño*/
 console.log(caja.offsetWidth)
-```
+{% endhighlight %}
 
 Opción 2:
-```Javascript
+{% highlight javascript linenos %}
 /*Un elemento cualquiera*/
 var caja = document.getElementById("caja")
 
@@ -48,15 +48,15 @@ caja.style.width += incrementoDeTamanio;
 
 /*Mostramos en consola el nuevo tamaño*/
 console.log(tamanioInicial + incrementoDeTamanio)
-```
+{% endhighlight %}
 
 A primera vista la primera forma puede parecer más óptima. Al menos desde el punto de vista del número de líneas. Ahora vamos a ver el tiempo que han tardado:
 
 Opción 1:
-[Rendimiento sincrónico forzado](../img/capturaRendimientoSincronicoForzado.png)
+![Rendimiento sincrónico forzado](../img/capturaRendimientoSincronicoForzado.png)
 
 Opción 2:
-[Rendimiento no sincrónico](../img/capturaRendimientoNoSincronico.png)
+![Rendimiento no sincrónico](../img/capturaRendimientoNoSincronico.png)
 
 Unos milisegundos no pueden parecer mucho, pero hablamos de multiplicar por más de 5 el tiempo necesario para hacer lo mismo.
 
