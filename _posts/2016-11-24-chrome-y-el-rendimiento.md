@@ -65,6 +65,37 @@ Unos milisegundos pueden no parecer mucho, pero hablamos de multiplicar por más
 
 [Ejemplo](https://github.com/DavidColladoGitHub/blogExamples/tree/master/Rendimiento%20Chrome) en GitHub
 
+## Hiperpaginácion de diseños
+Otro concepto que suena más complicado de lo que realmente es. Se trata de usar un código que fuerce el diseño sincrónico forzado dentro de un bucle.
+
+En este ejemplo vamos a cambiar el tamaño el ancho de todos los divs de la página llamados *caja* para que tengan el mismo que la primera caja.
+
+{% highlight javascript linenos %}
+function redimensionarCajas() {
+  for (var i = 0; i < caja.length; i++) {
+    caja[i].style.width = primeraCaja.offsetWidth + 'px';
+  }
+}
+{% endhighlight %}
+
+En cada iteración del bucle de este ejemplo se tiene que calcular el tamaño de la primera caja. Como es una consulta de estilo, Chrome tiene que adelantar la fase de pintado para poder coger el tamaño previo.
+
+Hecho bien
+
+{% highlight javascript linenos %}
+var width = primeraCaja.offsetWidth;
+
+function redimensionarCajas() {
+  for (var i = 0; i < caja.length; i++) {
+    caja[i].style.width = width + 'px';
+  }
+}
+{% endhighlight %}
+
+De este modo evitamos tener que repintar constantemente.
+
+## Notas finales
+Esto solo se aplica a Chrome.
 
 ## Referencias:
 [Evite los diseños grandes y complejos, y la hiperpaginación de diseños](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing?hl=es-419)
