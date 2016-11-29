@@ -123,9 +123,6 @@ defaults:
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
 link-tags: false
 
-gems:
-  - jekyll-seo-tag
-
 # Exclude these files from production site
 exclude:
   - Gemfile
@@ -182,6 +179,7 @@ prose:
 
 gems:
   - jekyll-paginate
+  - jekyll-seo-tag
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
