@@ -152,5 +152,4 @@ Con esto ya tenemos un __noSuchMethod__ propio. Hay casi ilimitadas formas difer
 
 ## Referencias
 * [Proxy - Javascript en MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
-
 * [Especificación ES6](http://www.ecma-international.org/ecma-262/6.0/#sec-proxy-objects)
