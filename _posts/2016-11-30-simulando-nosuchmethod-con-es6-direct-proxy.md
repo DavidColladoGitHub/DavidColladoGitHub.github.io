@@ -14,14 +14,16 @@ No voy a explicarlo en detalle, ya hay mucho escrito sobre este tema y el objeti
 ## ¿Cómo se usa?
 
 Para crear el proxy usaremos su constructor, que espera dos parámetros:
-```
+
+```javascript
 var p = new Proxy(target, handler);
 ```
+
 El objeto p resultante será un envoltorio sobre el objeto que pasemos como *target*. Podemos modificar su comportamiento a través de "traps" que son métodos que pasaremos en un objeto en el segundo parámetro (en el ejemplo llamado *handler*).
 
 Estos "traps" están definidos y hay una lista que podemos usar. Son entre otros el *get*, el *set*, el *apply*, el *has*... En en handler pasaremos uno o más con el código que nosotros queramos dentro. Los "traps" que hayamos definido dentro interceptarán las llamadas a propiedades y métodos del objeto y nos permitirán definir qué hacer. Un ejemplo de handler podría ser el siguiente:
 
-```
+```javascript
 var handler = {
     get: function(target, name){
         alert(target[name]())
