@@ -21,7 +21,7 @@ var p = new Proxy(target, handler);
 
 El objeto p resultante será un envoltorio sobre el objeto que pasemos como *target*. Podemos modificar su comportamiento a través de "traps" que son métodos que pasaremos en un objeto en el segundo parámetro (en el ejemplo llamado *handler*).
 
-Estos "traps" están definidos y hay una lista que podemos usar. Son entre otros el *get*, el *set*, el *apply*, el *has*... En en handler pasaremos uno o más con el código que nosotros queramos dentro. Los "traps" que hayamos definido dentro interceptarán las llamadas a propiedades y métodos del objeto y nos permitirán definir qué hacer. Un ejemplo de handler podría ser el siguiente:
+Estos "traps" están definidos y hay una lista que podemos usar. Son entre otros el *get*, el *set*, el *apply*, el *has*... En el handler pasaremos uno o más con el código que nosotros queramos dentro. Los "traps" que hayamos definido dentro interceptarán las llamadas a propiedades y métodos del objeto y nos permitirán definir qué hacer. Un ejemplo de handler podría ser el siguiente:
 
 ```javascript
 var handler = {
@@ -152,4 +152,5 @@ Con esto ya tenemos un __noSuchMethod__ propio. Hay casi ilimitadas formas difer
 
 ## Referencias
 *[Proxy - Javascript en MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
+
 *[Especificación ES6](http://www.ecma-international.org/ecma-262/6.0/#sec-proxy-objects)
