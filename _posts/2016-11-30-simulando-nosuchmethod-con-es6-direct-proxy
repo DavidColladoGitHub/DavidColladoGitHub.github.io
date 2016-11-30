@@ -1,3 +1,10 @@
 ---
 title: Simulando __noSuchMethod__ con el Direct Proxy de ES6
 ---
+
+A muchos os sonará el __noSuchMethod__ y su utilidad antes de pasar a estar obsoleto y desaparecer. Para los que no, en esencia es un método que se invoca cuando llamamos a un método que no existe en un objeto.
+
+No voy a entrar en la polémica de si es correcto usarlo o no, o los motivos de que lo hicieran obsoleto. Lo cierto es que tenía su utilidad, y con los proxies de ES6 podemos simularlo e incluso mejorarlo.
+
+## ¿Qué es el proxy de ES6?
+Antes de nada y para evitar confusiones, no tiene ninguna relación con los servidores proxy.
