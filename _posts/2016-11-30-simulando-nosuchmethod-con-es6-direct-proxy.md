@@ -151,6 +151,6 @@ class Animal {
 Con esto ya tenemos un __noSuchMethod__ propio. Hay casi ilimitadas formas diferentes de hacer esto mismo, pero la base siempre es la misma. Usar un Proxy, interceptar una llamada, y comprobar que existe el método.
 
 ## Referencias
-*[Proxy - Javascript en MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
+* [Proxy - Javascript en MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
 
-*[Especificación ES6](http://www.ecma-international.org/ecma-262/6.0/#sec-proxy-objects)
+* [Especificación ES6](http://www.ecma-international.org/ecma-262/6.0/#sec-proxy-objects)
