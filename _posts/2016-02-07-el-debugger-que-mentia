@@ -1,4 +1,5 @@
 ---
+layout: post
 title: El debugger que mentía
 subtitle: O sobre consecuencias de la optimización del V8
 ---
