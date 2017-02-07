@@ -28,7 +28,7 @@ document.getElementById("botonCualquiera").addEventListener("click", function(){
 
 Mágicamente aparece una alerta... y el valor mostrado es el correcto.
 
-Si en este punto aún tienes ganas, puedes probar el Internet Explorer y comprobar con estupefacción que ahí todo funciona como es de esperar (quien lo iba a decir...).
+Si en este punto aún tienes ganas, puedes probar el Internet Explorer y comprobar con estupefacción que ahí todo funciona como es de esperar (quién lo iba a decir...).
 
 ## La explicación
 
@@ -50,4 +50,4 @@ Por lo demás no hay que preocuparse. Esto solo aplica a la depuración. Si fina
 
 
 ## Referencias
-*[Bug reportado](https://bugs.chromium.org/p/v8/issues/detail?id=3491)
+[Bug reportado](https://bugs.chromium.org/p/v8/issues/detail?id=3491)
