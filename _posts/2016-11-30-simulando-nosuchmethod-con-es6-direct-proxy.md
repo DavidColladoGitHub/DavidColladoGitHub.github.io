@@ -44,18 +44,17 @@ Obj.prototype.hi = function(){
 };
 
 /* Este será el objeto que usemos como target en el proxy */
-var miObj = new Obj();
+var myObj = new Obj();
 
 /* Nuestro handler de antes */
 var handler = {
     get: function(target, name){
-    debugger;
         alert(target[name]())
     }
 };
 
 /* Creamos el proxy */
-var p = new Proxy(miObj, handler);
+var p = new Proxy(myObj, handler);
 
 /* Llamamos al método del target que será interceptado por el handler */
 p.hi()
